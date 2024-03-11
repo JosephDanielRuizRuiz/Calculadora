@@ -7,12 +7,12 @@ import { Calculdora2Component } from './calculdora2/calculdora2.component';
 const routes: Routes = [
   {
     path:'',
-    redirectTo:'/calculdora2',
+    redirectTo:'/super-calculadora',
     pathMatch:'full'
   },
   {
-    path:'calculdora2',
-    component: Calculdora2Component
+    path:'super-calculadora',
+    component: SuperCalculadoraComponent
   }
 ];
 
