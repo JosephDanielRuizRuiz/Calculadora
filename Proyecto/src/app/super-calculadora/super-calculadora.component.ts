@@ -42,7 +42,7 @@ export class SuperCalculadoraComponent implements OnInit {
   }
 
   PI():void{
-    Math.PI
+    this.Resultado = Math.PI*(parseFloat(this.Valor1))
   }
 
   Exponente():void{
