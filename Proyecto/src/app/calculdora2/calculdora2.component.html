@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="calculadora">
+            <div class="Titulo">
+                <h3>Calculadora</h3>
+            </div>
+            <div class="Operacion">
+                <div class="OperacionPrimera">{{OperacionPrimera}}</div>
+                <div class="OperacionSegunda">{{OperacionSegunda}}</div>
+            </div>
+            <div class="Botones">
+                <button (click)="Adicionar('CE')">CE</button>
+                <button (click)="Adicionar('C')">C</button>
+                <button (click)="Adicionar('DEL')">DEL</button>
+                <button (click)="Adicionar('/')">/</button>
+                <button (click)="Adicionar('7')" class="Numeros">7</button>
+                <button (click)="Adicionar('8')" class="Numeros">8</button>
+                <button (click)="Adicionar('9')" class="Numeros">9</button>
+                <button (click)="Adicionar('*')">*</button>
+                <button (click)="Adicionar('4')" class="Numeros">4</button>
+                <button (click)="Adicionar('5')" class="Numeros">5</button>
+                <button (click)="Adicionar('6')" class="Numeros">6</button>
+                <button (click)="Adicionar('-')">-</button>
+                <button (click)="Adicionar('1')" class="Numeros">1</button>
+                <button (click)="Adicionar('2')" class="Numeros">2</button>
+                <button (click)="Adicionar('3')" class="Numeros">3</button>
+                <button (click)="Adicionar('+')">+</button>
+                <button (click)="Adicionar('.')" class="Numeros">.</button>
+                <button (click)="Adicionar('0')" class="Numeros">0</button>
+                <button (click)="Adicionar('=')" class="Igual">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

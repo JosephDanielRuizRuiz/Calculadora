@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="calculadora">
+            <div class="Numeros">
+                <label for="Ingrese primer valor:">Ingrese primer valor:</label>
+                <br>
+                <input type="text" name="Valor1" class="input" [(ngModel)]="Valor1">
+                <br>
+                <label for="Ingrese segundo valor:">Ingrese segundo valor:</label>
+                <br>
+                <input type="text" name="Valor2" class="input"  [(ngModel)]="Valor2">
+                <br>
+
+                <div class="Nota">
+                    <p>(Nota: Para las operaciones de Seno, Coseno, Tangente, Euler, PI, Logaritmo, Raiz. Usar unicamente la casilla del Primer Valor)</p>
+                </div>
+            </div>
+                <div class="Botones">
+                    <!--Suma-->
+                    <button type="submit" class="Boton" (click)="Suma()">+</button>
+                    <!--Resta-->
+                    <button type="submit" class="Boton" (click)="Resta()">-</button>
+                    <!--Multi-->
+                    <button type="submit" class="Boton" (click)="Multiplicacion()">*</button>
+                    <!--Division-->
+                    <button type="submit" class="Boton" (click)="Division()">/
+                    </button>
+                    <!--Porcentaje-->
+                    <button type="submit" class="Boton" (click)="Porcentaje()">%
+                    </button>
+                    <!--Raiz-->
+                    <button type="submit" class="Boton" (click)="Raiz()">Raiz
+                    </button>
+                    <!--Euler-->
+                    <button type="submit" class="Boton" (click)="Euler()">e
+                    </button>
+                    <!--Exponente-->
+                    <button type="submit" class="Boton" (click)="Exponente()">Exp
+                    </button>
+                    <!--Logaritmo-->
+                    <button type="submit" class="Boton" (click)="Logaritmo()">Log
+                    </button>
+                    <!--Seno-->
+                    <button type="submit" class="Boton" (click)="Seno()">Sen
+                    </button>
+                    <!--Coseno-->
+                    <button type="submit" class="Boton" (click)="Coseno()">Cos
+                    </button>
+                    <!--Tangente-->
+                    <button type="submit" class="Boton" (click)="Tangente()">Tang
+                    </button>
+                    <!--PI-->
+                    <button type="submit" class="PI" (click)="PI()">PI
+                    </button>
+                    
+                    
+                </div>
+                
+
+            <h3>El Resultado es: </h3>
+            <div class="Resultado">{{Resultado}}</div>
+        </div>
+    </div>
+</body>
+</html>

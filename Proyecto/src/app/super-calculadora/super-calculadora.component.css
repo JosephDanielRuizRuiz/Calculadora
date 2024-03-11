@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 600;
+}
+
+body{
+    font-family: 'Chelsea Market', 'static';
+    font-size: 20px;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+}
+
+
+.calculadora{
+    width: 50%;
+    padding: 10px;
+    height: 110vh;
+    border: 8px solid rgb(238, 221, 221);
+    background-color: rgb(241, 150, 75);
+    border-radius: 5px;
+}
+
+.Numeros{
+    background-color: antiquewhite;
+    padding: 20px;
+    margin-bottom: 5px;
+    border: 5px solid rgb(146, 19, 19);
+    
+}
+
+.Numeros .input{
+    position: relative;
+    right: -250px;
+    top: -25px;
+    height: 30px;
+    border: 5px solid rgb(146, 19, 19);
+    border-radius: 5px;
+}
+
+.Botones{
+    border: 5px solid antiquewhite;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+    padding: 5px;
+    margin-bottom: 50px;
+    background-color: rgb(236, 87, 28);
+    
+}
+
+.Botones .Boton{
+    width: 130px;
+    padding: 10px;
+    height: 60px;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.Botones .Boton:hover{
+    background-color: rgb(233, 135, 44);
+    border: 5px solid antiquewhite;
+    border-radius: 10px;
+    width: 130px;
+    padding: 10px;
+    height: 60px;
+}
+
+.Botones .PI{
+    grid-column: span 4;
+    padding: 10px;
+    height: 60px;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.Botones .PI:hover{
+    background-color: rgb(233, 135, 44);
+    border: 5px solid antiquewhite;
+    border-radius: 10px;
+    padding: 10px;
+    height: 60px;
+}
+
+
+.Resultado{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: antiquewhite;
+    width: 65%;
+    border-radius: 5px;
+    border: 5px solid rgb(238, 221, 221);;
+    position: relative;
+    height: 35px;
+    right: -200px;
+    top: -30px;
+}

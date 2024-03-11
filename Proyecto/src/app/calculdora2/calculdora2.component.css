@@ -1,0 +1,90 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 100%;
+    border: 0px;
+    font-weight: 400;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: "Chelsea Market", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculadora{
+    width: 400px;
+    background-color: #6b92ff;
+}
+
+.Titulo{
+    width: 100%;
+    display:flex;
+    height: 35px;
+    background-color: rgb(27, 31, 85);
+    color: rgb(255, 255, 255);
+    align-items: center;
+}
+
+h3{
+    margin: 0;
+    padding: 5px;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.Operacion{
+    text-align: end;
+    margin: 0px 5px;
+    height: 85px;
+}
+
+.OperacionPrimera{
+    color: bisque;
+    font-size: 30px;
+    line-height: 30px;
+    overflow-wrap: break-word;
+}
+.OperacionSegunda{
+    color: bisque;
+    font-size: 55px;
+    overflow-wrap: break-word;
+    line-height: 50px;
+}
+.Botones{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+    margin: 5px;
+    color: rgb(255, 255, 255);
+}
+.Numeros{
+    background-color: rgb(42, 61, 165);
+    color: #ffffff;
+}
+.Igual{
+    background-color: aliceblue;
+    grid-column: span 2;
+}
+button{
+    border: 2px solid transparent;
+    font-size: 1.2em;
+    height: 4em;
+    background-color: #ffffff;
+}
+
+button:hover{
+    border: 2px solid transparent;
+    font-size: 1.2em;
+    height: 4em;
+    background-color: #001b44;
+}
